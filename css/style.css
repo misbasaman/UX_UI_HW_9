@@ -105,3 +105,30 @@ footer li {
 .content3 {
   grid-area: content3;
 }
+
+
+.flexContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 60px 30px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#research, #interface, #web, #wireframe {
+  background-color: #FFFFFF;
+  padding: 25px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Optional: Add any other styles specific to your content here */
+
+header li:hover {
+  color: grey;
+}
+
+footer li:hover {
+  color: grey;
+}
