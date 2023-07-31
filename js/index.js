@@ -66,13 +66,13 @@ viewButtons.forEach((button) => {
 });
 
 //change li color to blue when clicked in header
-const headerLiElements = document.querySelectorAll('header li');
+//const headerLiElements = document.querySelectorAll('header li');
 
-headerLiElements.forEach((li) => {
-  li.addEventListener('click', () => {
-    li.style.color = 'blue';
-  });
-});
+//headerLiElements.forEach((li) => {
+ // li.addEventListener('click', () => {
+  //  li.style.color = 'blue';
+ // });
+//});
 
 //change li color to blue when clicked in footer
 const footerLiElements = document.querySelectorAll('footer li');
@@ -82,4 +82,11 @@ footerLiElements.forEach((li) => {
     li.style.color = 'blue';
   });
 });
+
+
+  $(document).ready(function() {
+    $('header li').click(function() {
+      $(this).css('color', 'blue');
+    });
+  });
 
