@@ -4,10 +4,16 @@ body {
 header {
   background-color: #373738;
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header ul {
   float: right;
   color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 header li {
   display: inline-block;
@@ -17,8 +23,10 @@ header p {
   display: inline-block;
 }
 .heroImg {
-  background-color: #EBEBEB;
+  background-color: #5a5454;
   padding: 100px 15px;
+  position: relative;
+  overflow: hidden;
 }
 .content {
   max-width: 300px;
@@ -131,4 +139,47 @@ header li:hover {
 
 footer li:hover {
   color: grey;
+}
+
+/*plcing logo and name side-by-side*/
+
+header {
+  background-color: #373738;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-name-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name-container img {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add spacing between the logo and name */
+}
+
+.logo-name-container span {
+  color: white;
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Optional: Add bold font-weight */
+}
+
+/*video */
+.video-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
