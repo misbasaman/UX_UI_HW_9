@@ -61,7 +61,7 @@ const viewButtons = document.querySelectorAll(".view");
 
 viewButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    window.location.href = "https://www.gmail.com";
+    window.location.href = "https://www.google.com";
   });
 });
 
@@ -90,3 +90,32 @@ footerLiElements.forEach((li) => {
     });
   });
 
+  /*change button color*/
+  $(document).ready(function() {
+    // Change button color on hover
+    $('.view').hover(function() {
+      $(this).css('background-color', 'grey');
+    }, function() {
+      $(this).css('background-color', 'grey');
+    });
+  
+    // Change button color on click
+    $('.view').click(function() {
+      $(this).css('background-color', 'black');
+    });
+  });
+
+  /*download button */
+  $(document).ready(function() {
+    // Change button color on hover
+    $('#download').hover(function() {
+      $(this).css('background-color', 'grey');
+    }, function() {
+      $(this).css('background-color', 'grey');
+    });
+  
+    // Change button color on click
+    $('#download').click(function() {
+      $(this).css('background-color', 'black');
+    });
+  });
