@@ -233,3 +233,9 @@ header {
   height: 100%;
   object-fit: cover;
 }
+
+.img1{
+  background-image: url(../images/myworkimages/viva\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
