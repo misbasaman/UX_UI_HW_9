@@ -49,6 +49,7 @@ button {
 }
 footer {
   background-color: #373738;
+  margin-top: 20px; 
   padding: 5px;
   color: white;
 }
@@ -128,8 +129,16 @@ Please replace the existing .workGrid section in your HTML and the corresponding
 }
 .img3 {
   grid-area: img3;
+  position: relative;
 }
 
+.img3 img {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+}
 
 .img1, .img2, .img3, .content1, .content2, .content3 {
   padding: 20px;
@@ -144,9 +153,7 @@ Please replace the existing .workGrid section in your HTML and the corresponding
 .content2 {
   grid-area: content2;
 }
-.content3 {
-  grid-area: content3;
-}
+
 
 
 .flexContainer {
@@ -238,4 +245,28 @@ header {
   background-image: url(../images/myworkimages/viva\ 1.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.project-link {
+  position: absolute;
+  top: 50%; /* Center it vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.project-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.content3 {
+  grid-area: content3;
+  margin-top: 10px; /* Add spacing between content and link */
 }
